@@ -13,8 +13,7 @@ class SetNumber {
 	
 	// 引数を持たないコンストラクタ②
 	SetNumber(){
-		this.num1 = 100;
-		this.num2 = 1;
+		this(1); // 変更箇所（自身のオブジェクトにおけるコンストラクタの呼び出し）
 	}
 	
 	public void getNumber() {
@@ -22,7 +21,6 @@ class SetNumber {
 		System.out.println(num2);
 	}
 }
-
 
 // 実行クラス
 public class Chapter13_1 {

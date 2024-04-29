@@ -15,6 +15,10 @@ class SubExClass extends ExClass {
 		int x = i * 1000;
 		System.out.println(x);
 	}
+	
+	public void increase2(int i) {
+		super.increase(i); // スーパークラスのメソッドを呼び出す
+	}
 }
 
 // 実行クラス
@@ -23,5 +27,6 @@ public class Chapter12_2 {
 		// サブクラスのインスタンス化
 		SubExClass sub = new SubExClass();
 		sub.increase(5);
+		sub.increase2(5); // スーパークラスのメソッドを呼び出すメソッドの呼び出し
 	}
 }
